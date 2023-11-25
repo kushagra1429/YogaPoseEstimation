@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    {% csrf_token %}
+    <link rel="stylesheet" href='/static/styles.css?{% now "U"%}' />
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <div class="title">Correct your Postures</div>
+        <div class="subT">
+            <li>Home <img src='{%static "home.png"%}'></li>
+            <li>About <img src='{%static "information-button.png"%}'></li>
+            <!-- <li>Creators</li> -->
+        </div>
+    </div>
+    <div class="circle1"></div>
+    <div class="MainPart">
+        <div class="MainGet">
+            <div class="getStart" id="getStart">
+            <img src='{%static "dslr-camera.png"%}' width="70px" height="70px">
+            <!-- <a href="https://www.flaticon.com/free-icons/photography" title="photography icons">Photography icons created by Freepik - Flaticon</a> -->
+        </div>
+    </div>
+        <div class="descrip">
+            <div class="C" id="C">Choose Your Asana</div>
+            <img src="{%static 'right-arrow.png'%}" class="arrow" id="arrow">
+            <div class="circle2"></div>
+            <div class="postures" id="postures">
+                <!-- <li>Adho mukha svanasana (Downdog)</li>
+                <li>Utkata Konasana (Goddess)</li>
+                <li>Phalakasana (Plank)</li>
+                <li>Vrikshasana (Treepose)</li>
+                <li>Virabhadrasana (Warrior)</li> -->
+
+
+                <li><div class="clickable-div" onclick="showDescription('div1')">
+                    Adho mukha svanasana (Downdog)
+                </div></li>
+                <li><div class="clickable-div" onclick="showDescription('div2')">
+                    Utkata Konasana (Goddess)
+                </div></li>
+                <li><div class="clickable-div" onclick="showDescription('div3')">
+                    Phalakasana (Plank)
+                </div></li>
+                <li><div class="clickable-div" onclick="showDescription('div4')">
+                    Vrikshasana (Treepose)
+                </div></li>
+                <li><div class="clickable-div" onclick="showDescription('div5')">
+                    Virabhadrasana (Warrior)
+                </div></li>
+                
+            </div>
+        
+            <img src="{%static 'right-arrow.png'%}" class="arrow1" id="arrow1">
+            
+            <div class="Description" id="Description">
+                <div class="description" id="description1">Downward Dog Pose or Downward-facing Dog Pose, also called Adho Mukha Svanasana, is an inversion asana, often practised as part of a flowing sequence of poses, especially Surya Namaskar, the Salute to the Sun. The asana is commonly used in modern yoga as exercise. <img src="{%static 'istockphoto-1407962374-612x612.jpg'%}"></div>
+                <div class="description" id="description2">Utkata konasana is a powerful standing yoga asana, where the lower body is in a wide-legged squat and the arms are raised at shoulder height. Utkata konasana is known for its energizing and empowering effects on the mind, as the physical strength required to hold this posture also has a positive impact on the mind.</div>
+                <div class="description" id="description3">The plank (also called a front hold, hover, or abdominal bridge) is an isometric core strength exercise that involves maintaining a position similar to a push-up for the maximum possible time<img src="{%static '2965780.webp'%}"></div>
+                <div class="description" id="description4">Tree pose or Vrikshasana is a balancing asana. It is one of the very few standing poses in medieval hatha yoga, and remains popular in modern yoga as exercise.</div>
+                <div class="description" id="description5">Virabhadrasana or Warrior Pose is a group of related lunging standing asanas in modern yoga as exercise commemorating the exploits of a mythical warrior, Virabhadra. The name of the pose derives from the Hindu myth, but the pose is not recorded in the hatha yoga tradition until the 20th century. </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="videoContainer">
+        <video id="video" autoplay></video>
+        <img id="processedImage" alt="Processed Image">
+    </div>
+    <footer class="footer">
+        <div><img class="imgfooter" src="{%static 'black-and-white-yoga-day-clipart-lm06k.webp'%}"></div>
+        <div class="footertext">This website aims to help an individual perform yoga in correct posture by obtaining  their  joints (key points) and prevailing angles from the obtained key points and running it through our model which is extensively trained by benchmarked datasets. It displays  whether the yoga posture is correct or not in real time using live feed . The incorrect postures are displayed by the skeleton mapping  turning red and the correct ones by turning green . Our aim is to minimise posture errors in yoga as it can lead to fatal body curvatures in long term.</div>
+    </footer>
+    <!-- <img id="processedImage" alt="Processed Image">
+    <video id="video" autoplay></video> -->
+    
+    
+    <script src='{%static "yoga.js"%}'></script>
+
+</body>
+</html>
