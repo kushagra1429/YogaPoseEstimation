@@ -1,4 +1,4 @@
-<img width="522" alt="Screenshot 2023-11-22 at 10 23 16 AM" src="https://github.com/kushagra1429/YogaPoseEstimation/assets/72542794/604297dc-f11e-4dec-b05d-8e050bfaeb6c"><img width="1512" alt="Screenshot 2023-11-21 at 6 36 45 PM" src="https://github.com/kushagra1429/YogaPoseEstimation/assets/72542794/f4e867da-94fb-498f-97f5-7236e3b2dcbd"># YogaPoseEstimation
+
 YogaPoseEstimation is a mediapipe model which is integrated on a django powered website. Yoga ensures both the mental &amp; physical health of an individual. 
 Along with the benefits, it can also be detrimental if not performed in the correct way. The model is programmed and crafted for detecting the correctness of the Yoga Asana performed by the user.
 The model required the mapping of the performer's body for efficiently detecting the posture. The mapping are done using the mediapipe. If the performed asana is correct, then the performer's body is marked in green, and red, if wrong. 
