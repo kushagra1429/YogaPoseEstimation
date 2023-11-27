@@ -11,6 +11,8 @@ This is the interface of the website that the user communicates for availing the
 <img width="1512" alt="Screenshot 2023-11-21 at 6 39 11 PM" src="https://github.com/kushagra1429/YogaPoseEstimation/assets/72542794/99b7d4a8-5bee-4f0a-a420-1bf32ae4d591">
 <img width="1512" alt="Screenshot 2023-11-21 at 6 41 27 PM" src="https://github.com/kushagra1429/YogaPoseEstimation/assets/72542794/af184a77-6f4c-4f94-864b-3a88d69c74f1">
 <img width="1512" alt="Screenshot 2023-11-21 at 7 02 22 PM" src="https://github.com/kushagra1429/YogaPoseEstimation/assets/72542794/a52a713f-712b-44c5-a707-1e27b36d06ab">
+
 The following are the results of the model. The wrong and right postures are mapped with green and red accordingly.
+
 <img width="522" alt="Screenshot 2023-11-22 at 10 23 16 AM" src="https://github.com/kushagra1429/YogaPoseEstimation/assets/72542794/fd1a8035-9b66-4d99-a8ab-0b1ce188ec67">
 <img width="336" alt="Screenshot 2023-11-22 at 10 23 27 AM" src="https://github.com/kushagra1429/YogaPoseEstimation/assets/72542794/0487121a-cefd-4bf0-adc1-50f2e41156b4">
